@@ -1,491 +1,333 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Bootstrap Cheat Sheet</title>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Bootstrap Cheat Sheet : Easier &amp; faster way to use bootstrap everyday">
+<xmp theme="united" style="display:none;">
+# Bootstrap(v3.2.0) Cheat Sheet(v0.1.0)
+Bootstrap的文档非常详尽, 每个组件每个示例都能够方便地在日常开发中快速使用, 真心感谢Bootstrap给我们提供一切, 切实地提高了我们的工作效率.
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+建议初学者一字不落地将文档看一遍, 上手之后, 其实我们使用频率最高的就是某些组件具体的HTML结构和CSS class, 这些东西如果能够背下来, 必定会让你的开发效率更上一层楼.
 
-    <title>Bootstrap Cheat Sheet</title>
-  </head>
+但我记忆力一直不咋的, 每次使用过一个组件后, 下次又得参看文档, 每天不停地打开Bootstrap, 翻来覆去地CTRL + F去找这些组件的使用方法, 并确认Bootstrap是否已经有实现了. 这些东西分散在文档中(Getting started, CSS, Components, JavaScript), 找寻时详尽的文档反而变成了效率的绊脚石.
 
-  <body>
+其实我需要的是一份简洁的列表, 告诉我Bootstrap实现了哪些东西, 大概涉及到哪些CSS class, 以方便我快速的应用, 将Bootstrap提供的一切都用起来(榨干框架是我们的宗旨), 不重复造轮子, 体现出框架的价值.
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/ufologist/bootstrap-cheat-sheet">View on GitHub</a>
+也有小伙伴遇到了同样的问题[Bootstrap Cheat Sheets](http://www.bootstrapcheatsheets.com/about/), 但有些列表不够详尽, 或者版本没有和Bootstrap同步, 反正就是没有找到我想要的东西, 因此我自己做了一份markdown版的, 在Sublime Text中可以非常方便的定位大纲内容, 相当的easy!
 
-          <h1 id="project_title">Bootstrap Cheat Sheet</h1>
-          <h2 id="project_tagline">Easier &amp; faster way to use bootstrap everyday</h2>
+如果你在使用过程中有任何意见建议, 欢迎fork出自己的版本或者提出[issue](https://github.com/ufologist/bootstrap-cheat-sheet/issues/new).
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/ufologist/bootstrap-cheat-sheet/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/ufologist/bootstrap-cheat-sheet/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="bootstrapv320-cheat-sheetv010" class="anchor" href="#bootstrapv320-cheat-sheetv010"><span class="octicon octicon-link"></span></a>Bootstrap(v3.2.0) Cheat Sheet(v0.1.0)</h1>
+**推荐的使用方法**
 
-<p>Bootstrap的文档非常详尽, 每个组件每个示例都能够方便地在日常开发中快速使用, 真心感谢Bootstrap给我们提供一切, 切实地提高了我们的工作效率.</p>
+将[README.md](https://github.com/ufologist/bootstrap-cheat-sheet/raw/master/README.md)下载到电脑上, 在Sublime Text中打开, 效果如下:
 
-<p>建议初学者一字不落地将文档看一遍, 上手之后, 其实我们使用频率最高的就是某些组件具体的HTML结构和CSS class, 这些东西如果能够背下来, 必定会让你的开发效率更上一层楼.</p>
+![preview](images/preview.png)
 
-<p>但我记忆力一直不咋的, 每次使用过一个组件后, 下次又得参看文档, 每天不停地打开Bootstrap, 翻来覆去地CTRL + F去找这些组件的使用方法, 并确认Bootstrap是否已经有实现了. 这些东西分散在文档中(Getting started, CSS, Components, JavaScript), 找寻时详尽的文档反而变成了效率的绊脚石.</p>
 
-<p>其实我需要的是一份简洁的列表, 告诉我Bootstrap实现了哪些东西, 大概涉及到哪些CSS class, 以方便我快速的应用, 将Bootstrap提供的一切都用起来(榨干框架是我们的宗旨), 不重复造轮子, 体现出框架的价值.</p>
+## doctype
+    <!DOCTYPE html>
+    <html lang="en"></html>
+## mobile first
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<p>也有小伙伴遇到了同样的问题<a href="http://www.bootstrapcheatsheets.com/about/">Bootstrap Cheat Sheets</a>, 但有些列表不够详尽, 或者版本没有和Bootstrap同步, 反正就是没有找到我想要的东西, 因此我自己做了一份markdown版的, 在Sublime Text中可以非常方便的定位大纲内容, 相当的easy!</p>
-
-<p>如果你在使用过程中有任何意见建议, 欢迎<a href="https://github.com/ufologist/bootstrap-cheat-sheet">fork</a>出自己的版本或者提出<a href="https://github.com/ufologist/bootstrap-cheat-sheet/issues/new">issue</a>.</p>
-
-<h2>
-<a name="doctype" class="anchor" href="#doctype"><span class="octicon octicon-link"></span></a>doctype</h2>
-
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;&lt;/html&gt;
-</code></pre>
-
-<h2>
-<a name="mobile-first" class="anchor" href="#mobile-first"><span class="octicon octicon-link"></span></a>mobile first</h2>
-
-<pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-</code></pre>
-
-<h2>
-<a name="help-class" class="anchor" href="#help-class"><span class="octicon octicon-link"></span></a>help class</h2>
-
-<pre><code>text-left    text-lowercase  text-primary bg-primary
-text-center  text-uppercase  text-success bg-success
-text-right   text-capitalize text-info    bg-info
-text-justify                 text-warning bg-warning
-text-nowrap                  text-danger  bg-danger
-                             text-muted
-                             text-hide
-                             sr-only.sr-only-focusable
-
-pull-left pull-right clearfix
-center-block
-show hidden
-
-span.caret
-&lt;button type="button" class="close" data-dismiss="alert"&gt;&lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;&lt;span class="sr-only"&gt;Close&lt;/span&gt;&lt;/button&gt;
-</code></pre>
-
-<h2>
-<a name="grid" class="anchor" href="#grid"><span class="octicon octicon-link"></span></a>grid</h2>
-
-<pre><code>xs sm md lg
-
-Media queries
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) {}
-
-container container-fluid
-col-*-*
-col-*-offset-*
-col-*-push-*     col-*-pull-*
-visible-*-*      hidden-*
-visible-print-*  hidden-print
-</code></pre>
-
-<h2>
-<a name="basic-style" class="anchor" href="#basic-style"><span class="octicon octicon-link"></span></a>basic style</h2>
-
-<pre><code>h1 .h1 small .small
-body font-size: 14px; line-height: 1.428
-p margin-bottom: 10px(half line-height)
-.lead
-
-mark
-del s
-ins u
-small strong em
-code kbd pre var samp
-abbr .initialism
-address
-blockquote footer .blockquote-reverse
-ul ol list-unstyled list-inline
-dl .dl-horizontal
-</code></pre>
-
-<h2>
-<a name="nav" class="anchor" href="#nav"><span class="octicon octicon-link"></span></a>nav</h2>
-
-<pre><code>ul.nav.nav-tabs nav-pills nav-stacked nav-justified
-
-navbar navbar-default&gt;container&gt;navbar-header&gt;navbar-toggle+navbar-brand
-       navbar-fixed-top        &gt;collapse navbar-collapse&gt;nav navbar-nav
-       navbar-fixed-bottom                              &gt;navbar-form
-       navbar-static-top                                &gt;navbar-btn
-       navbar-inverse                                   &gt;navbar-text navbar-link
-                                                        &gt;navbar-left navbar-right
-</code></pre>
-
-<h2>
-<a name="tab" class="anchor" href="#tab"><span class="octicon octicon-link"></span></a>tab</h2>
-
-<pre><code>ul.nav.nav-tabs&gt;li.active&gt;a[href="#home" data-toggle="tab"]
-.tab-content&gt;.tab-pane.fade.active#home
-</code></pre>
-
-<h2>
-<a name="jumbotron" class="anchor" href="#jumbotron"><span class="octicon octicon-link"></span></a>jumbotron</h2>
-
-<pre><code>.jumbotron&gt;h1
-</code></pre>
-
-<h2>
-<a name="page-header" class="anchor" href="#page-header"><span class="octicon octicon-link"></span></a>page header</h2>
-
-<pre><code>.page-header&gt;h1
-</code></pre>
-
-<h2>
-<a name="breadcrumb" class="anchor" href="#breadcrumb"><span class="octicon octicon-link"></span></a>breadcrumb</h2>
-
-<pre><code>ol.breadcrumb
-</code></pre>
-
-<h2>
-<a name="glyphicon" class="anchor" href="#glyphicon"><span class="octicon octicon-link"></span></a>glyphicon</h2>
-
-<pre><code>span.glyphicon.glyphicon-*
-</code></pre>
-
-<h2>
-<a name="button" class="anchor" href="#button"><span class="octicon octicon-link"></span></a>button</h2>
-
-<pre><code>&lt;button&gt; &lt;a&gt; &lt;input&gt;
-btn btn-default btn-xs btn-block active
-    btn-primary btn-sm           disabled .disabled
-    btn-success btn-lg
-    btn-info
-    btn-warning
-    btn-danger
-    btn-link
-</code></pre>
-
-<h3>
-<a name="stateful" class="anchor" href="#stateful"><span class="octicon octicon-link"></span></a>stateful</h3>
-
-<pre><code>&lt;button type="button" id="example-btn" data-loading-text="Loading..." class="btn btn-primary"&gt;submit&lt;/button&gt;
-$('#example-btn').click(function() {
-    var btn = $(this);
-    btn.button('loading');
-    // btn.button('complete'); // data-complete-text="html"
-    $.ajax('...').always(function() {
-        btn.button('reset');
-    });
-});
-</code></pre>
-
-<h3>
-<a name="toggle" class="anchor" href="#toggle"><span class="octicon octicon-link"></span></a>toggle</h3>
-
-<pre><code>&lt;button type="button" class="btn btn-primary" data-toggle="button"&gt;Single toggle&lt;/button&gt;
-</code></pre>
-
-<h3>
-<a name="checkbox" class="anchor" href="#checkbox"><span class="octicon octicon-link"></span></a>checkbox</h3>
-
-<pre><code>&lt;div class="btn-group" data-toggle="buttons"&gt;
-    &lt;label class="btn btn-primary active"&gt;
-        &lt;input type="checkbox" checked&gt;Option 1 (pre-checked)
-    &lt;/label&gt;
-    &lt;label class="btn btn-primary"&gt;
-        &lt;input type="checkbox"&gt;Option 2
-    &lt;/label&gt;
-    &lt;label class="btn btn-primary"&gt;
-        &lt;input type="checkbox"&gt;Option 3
-    &lt;/label&gt;
-&lt;/div&gt;
-</code></pre>
-
-<h3>
-<a name="radio" class="anchor" href="#radio"><span class="octicon octicon-link"></span></a>radio</h3>
-
-<pre><code>&lt;div class="btn-group" data-toggle="buttons"&gt;
-    &lt;label class="btn btn-primary active"&gt;
-        &lt;input type="radio" name="options" checked&gt;Option 1 (preselected)
-    &lt;/label&gt;
-    &lt;label class="btn btn-primary"&gt;
-        &lt;input type="radio" name="options"&gt;Option 2
-    &lt;/label&gt;
-    &lt;label class="btn btn-primary"&gt;
-        &lt;input type="radio" name="options"&gt;Option 3
-    &lt;/label&gt;
-&lt;/div&gt;
-</code></pre>
-
-<h2>
-<a name="button-group" class="anchor" href="#button-group"><span class="octicon octicon-link"></span></a>button group</h2>
-
-<pre><code>div.btn-group&gt;button btn-group-xs btn-group-sm btn-group-lg
-div.btn-group&gt;ul.dropdown-menu
-div.btn-toolbar&gt;div.btn-group
-btn-group-vertical
-.btn-group.btn-group-justified
-</code></pre>
-
-<h2>
-<a name="img" class="anchor" href="#img"><span class="octicon octicon-link"></span></a>img</h2>
-
-<pre><code>img.img-responsive
-   .img-rounded.img-circle.img-thumbnail
-</code></pre>
-
-<h2>
-<a name="table" class="anchor" href="#table"><span class="octicon octicon-link"></span></a>table</h2>
-
-<pre><code>table .table .table-striped .table-bordered .table-hover .table-condensed
-tr.active td.success.info.warning.danger
-div.table-responsive
-</code></pre>
-
-<h2>
-<a name="form" class="anchor" href="#form"><span class="octicon octicon-link"></span></a>form</h2>
-
-<pre><code>form .form-inline .form-horizontal
-.form-group .has-success/warning/error .has-feedback .form-control-feedback .form-control
-.checkbox&gt;label&gt;input:checkbox radio
-label.checkbox-inline radio-inline
-.form-control-static
-disabled .disabled readonly
-.input-sm .input-lg
-.form-group-sm .form-group-lg
-.help-block
-</code></pre>
-
-<h2>
-<a name="input-group" class="anchor" href="#input-group"><span class="octicon octicon-link"></span></a>input group</h2>
-
-<pre><code>input-group input-group-lg input-group-sm
-span.input-group-addon
-span.input-group-btn&gt;button
-</code></pre>
-
-<h2>
-<a name="labelbadgealert" class="anchor" href="#labelbadgealert"><span class="octicon octicon-link"></span></a>label/badge/alert</h2>
-
-<pre><code>span.label.label-default
-           label-primary
-           label-success
-           label-info
-           label-warning
-           label-danger
-
-span.badge
-
-.alert.alert-success&gt;strong
-       alert-info
-       alert-warning
-       alert-danger
-.fade.in
-a.alert-link
-</code></pre>
-
-<h2>
-<a name="panel" class="anchor" href="#panel"><span class="octicon octicon-link"></span></a>panel</h2>
-
-<pre><code>.panel.panel-default&gt;.panel-heading&gt;.panel-title
-       panel-primary&gt;.panel-body
-       panel-success&gt;.panel-footer
-       panel-info   &gt;table.table
-       panel-warning
-       panel-danger
-</code></pre>
-
-<h2>
-<a name="collapseaccordion" class="anchor" href="#collapseaccordion"><span class="octicon octicon-link"></span></a>collapse/accordion</h2>
-
-<pre><code>.collapse
-.collapse.in
-.collapsing
-
-&lt;button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo"&gt;simple collapsible&lt;/button&gt;
-&lt;div id="demo" class="collapse in"&gt;collapse content&lt;/div&gt;
-
-&lt;div class="panel-group" id="accordion"&gt;
-    &lt;div class="panel panel-default"&gt;
-        &lt;div class="panel-heading"&gt;
-            &lt;h4 class="panel-title"&gt;
-                &lt;a data-toggle="collapse" data-parent="#accordion" href="#collapse1"&gt;Collapsible Group Item #1&lt;/a&gt;
-            &lt;/h4&gt;
-        &lt;/div&gt;
-        &lt;div id="collapse1" class="panel-collapse collapse in"&gt;
-            &lt;div class="panel-body"&gt;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-
-<h2>
-<a name="list-group" class="anchor" href="#list-group"><span class="octicon octicon-link"></span></a>list group</h2>
-
-<pre><code>ul.list-group&gt;.list-group-item&gt;span.badge
-.list-group&gt;a.list-group-item.active.disabled&gt;h4.list-group-item-heading
-                                              p.list-group-item-text
-              list-group-item-success
-              list-group-item-info
-              list-group-item-warning
-              list-group-item-danger
-</code></pre>
-
-<h2>
-<a name="thumbnail" class="anchor" href="#thumbnail"><span class="octicon octicon-link"></span></a>thumbnail</h2>
-
-<pre><code>a.thumbnail&gt;img
-.thumbnail&gt;img+.caption
-</code></pre>
-
-<h2>
-<a name="media-object" class="anchor" href="#media-object"><span class="octicon octicon-link"></span></a>media object</h2>
-
-<pre><code>.media&gt;a.pull-left&gt;img
-       .media-body&gt;.media-heading
-                   .media
-ul.media-list&gt;li.media
-</code></pre>
-
-<h2>
-<a name="pagination" class="anchor" href="#pagination"><span class="octicon octicon-link"></span></a>pagination</h2>
-
-<pre><code>ul.pagination pagination-lg pagination-sm
-li.active.disabled
-
-ul.pager
-li.previous li.next
-</code></pre>
-
-<h2>
-<a name="progress-bar" class="anchor" href="#progress-bar"><span class="octicon octicon-link"></span></a>progress bar</h2>
-
-<pre><code>progress&gt;progress-bar[aria-valuenow="0"]
-         progress-bar-success
-         progress-bar-info
-         progress-bar-warning
-         progress-bar-danger
-         progress-bar-striped.active
-</code></pre>
-
-<h2>
-<a name="embed" class="anchor" href="#embed"><span class="octicon octicon-link"></span></a>embed</h2>
-
-<pre><code>.embed-responsive.embed-responsive-16by9&gt;iframe.embed-responsive-item
-                 .embed-responsive-4by3
-</code></pre>
-
-<h2>
-<a name="well" class="anchor" href="#well"><span class="octicon octicon-link"></span></a>well</h2>
-
-<pre><code>.well.well-lg
-     .well-sm
-</code></pre>
-
-<h2>
-<a name="dropdown" class="anchor" href="#dropdown"><span class="octicon octicon-link"></span></a>dropdown</h2>
-
-<pre><code>dropdown dropup
-dropdown-toggle
-ul.dropdown-menu dropdown-menu-right
-li.active.disabled
-li.dropdown-header divider
-</code></pre>
-
-<h2>
-<a name="modal" class="anchor" href="#modal"><span class="octicon octicon-link"></span></a>modal</h2>
-
-<pre><code>.modal-backdrop.fade.in
-.modal.fade
-    .modal-dialog.modal-sm.modal-lg
-        .modal-content
-            .modal-header
-            .modal-body
-            .modal-footer
-</code></pre>
-
-<h2>
-<a name="tooltip" class="anchor" href="#tooltip"><span class="octicon octicon-link"></span></a>tooltip</h2>
-
-<pre><code>[data-toggle="tooltip" data-placement="left" data-original-title="Tooltip on left"]
-.tooltip.fade.top.left.bottom.right.in&gt;.tooltip-arrow+.tooltip-inner&gt;{Tooltip on left}
-</code></pre>
-
-<h2>
-<a name="popover" class="anchor" href="#popover"><span class="octicon octicon-link"></span></a>popover</h2>
-
-<pre><code>.popover.top&gt;.arrow+.popover-title+.popover-content
-</code></pre>
-
-<h2>
-<a name="carousel" class="anchor" href="#carousel"><span class="octicon octicon-link"></span></a>carousel</h2>
-
-<pre><code>&lt;div id="carousel1" class="carousel slide" data-ride="carousel" data-interval="false"&gt;
-    &lt;!-- Indicators --&gt;
-    &lt;ol class="carousel-indicators"&gt;
-        &lt;li data-target="#carousel1" data-slide-to="0" class="active"&gt;&lt;/li&gt;
-        &lt;li data-target="#carousel1" data-slide-to="1"&gt;&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;!-- Wrapper for slides --&gt;
-    &lt;div class="carousel-inner"&gt;
-        &lt;div class="item active"&gt;
-            &lt;img src="http://dummyimage.com/600x400" class="center-block" alt="image"&gt;
-            &lt;div class="carousel-caption"&gt;
-                &lt;h3&gt;First slide label&lt;/h3&gt;
-                &lt;p&gt;Nulla vitae elit libero.&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="item"&gt;
-            &lt;img src="http://dummyimage.com/600x400" class="center-block" alt="image"&gt;
-            &lt;div class="carousel-caption"&gt;.carousel-caption&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;!-- Controls --&gt;
-    &lt;a class="left carousel-control" href="#carousel1" role="button" data-slide="prev"&gt;&lt;span class="glyphicon glyphicon-chevron-left"&gt;&lt;/span&gt;&lt;/a&gt;
-    &lt;a class="right carousel-control" href="#carousel1" role="button" data-slide="next"&gt;&lt;span class="glyphicon glyphicon-chevron-right"&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;/div&gt;
-</code></pre>
-
-<h2>
-<a name="scrollspy" class="anchor" href="#scrollspy"><span class="octicon octicon-link"></span></a>scrollspy</h2>
-
-<pre><code>&lt;body data-spy="scroll" data-target=".navbar-example"&gt;
-</code></pre>
-
-<h2>
-<a name="affix" class="anchor" href="#affix"><span class="octicon octicon-link"></span></a>affix</h2>
-
-<pre><code>&lt;div data-spy="affix" data-offset-top="60" data-offset-bottom="200"&gt;
-</code></pre>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Bootstrap Cheat Sheet maintained by <a href="https://github.com/ufologist">ufologist</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+## help class
+    text-left    text-lowercase  text-primary bg-primary
+    text-center  text-uppercase  text-success bg-success
+    text-right   text-capitalize text-info    bg-info
+    text-justify                 text-warning bg-warning
+    text-nowrap                  text-danger  bg-danger
+                                 text-muted
+                                 text-hide
+                                 sr-only.sr-only-focusable
     
+    pull-left pull-right clearfix
+    center-block
+    show hidden
+    
+    span.caret
+    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
 
-  </body>
+## grid
+    xs sm md lg
+    
+    Media queries
+    /* Extra small devices (phones, less than 768px) */
+    /* No media query since this is the default in Bootstrap */
+    
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: @screen-sm-min) {}
+    
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: @screen-md-min) {}
+    
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: @screen-lg-min) {}
+    
+    container container-fluid
+    col-*-*
+    col-*-offset-*
+    col-*-push-*     col-*-pull-*
+    visible-*-*      hidden-*
+    visible-print-*  hidden-print
+
+## basic style
+    h1 .h1 small .small
+    body font-size: 14px; line-height: 1.428
+    p margin-bottom: 10px(half line-height)
+    .lead
+    
+    mark
+    del s
+    ins u
+    small strong em
+    code kbd pre var samp
+    abbr .initialism
+    address
+    blockquote footer .blockquote-reverse
+    ul ol list-unstyled list-inline
+    dl .dl-horizontal
+
+## nav
+    ul.nav.nav-tabs nav-pills nav-stacked nav-justified
+    
+    navbar navbar-default>container>navbar-header>navbar-toggle+navbar-brand
+           navbar-fixed-top        >collapse navbar-collapse>nav navbar-nav
+           navbar-fixed-bottom                              >navbar-form
+           navbar-static-top                                >navbar-btn
+           navbar-inverse                                   >navbar-text navbar-link
+                                                            >navbar-left navbar-right
+## tab
+    ul.nav.nav-tabs>li.active>a[href="#home" data-toggle="tab"]
+    .tab-content>.tab-pane.fade.active#home
+
+## jumbotron
+    .jumbotron>h1
+
+## page header
+    .page-header>h1
+
+## breadcrumb
+    ol.breadcrumb
+
+## glyphicon
+    span.glyphicon.glyphicon-*
+
+## button
+    <button> <a> <input>
+    btn btn-default btn-xs btn-block active
+        btn-primary btn-sm           disabled .disabled
+        btn-success btn-lg
+        btn-info
+        btn-warning
+        btn-danger
+        btn-link
+### stateful
+    <button type="button" id="example-btn" data-loading-text="Loading..." class="btn btn-primary">submit</button>
+    $('#example-btn').click(function() {
+        var btn = $(this);
+        btn.button('loading');
+        // btn.button('complete'); // data-complete-text="html"
+        $.ajax('...').always(function() {
+            btn.button('reset');
+        });
+    });
+### toggle
+    <button type="button" class="btn btn-primary" data-toggle="button">Single toggle</button>
+### checkbox
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary active">
+            <input type="checkbox" checked>Option 1 (pre-checked)
+        </label>
+        <label class="btn btn-primary">
+            <input type="checkbox">Option 2
+        </label>
+        <label class="btn btn-primary">
+            <input type="checkbox">Option 3
+        </label>
+    </div>
+### radio
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary active">
+            <input type="radio" name="options" checked>Option 1 (preselected)
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="options">Option 2
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="options">Option 3
+        </label>
+    </div>
+## button group
+    div.btn-group>button btn-group-xs btn-group-sm btn-group-lg
+    div.btn-group>ul.dropdown-menu
+    div.btn-toolbar>div.btn-group
+    btn-group-vertical
+    .btn-group.btn-group-justified
+
+## img
+    img.img-responsive
+       .img-rounded.img-circle.img-thumbnail
+
+## table
+    table .table .table-striped .table-bordered .table-hover .table-condensed
+    tr.active td.success.info.warning.danger
+    div.table-responsive
+
+## form
+    form .form-inline .form-horizontal
+    .form-group .has-success/warning/error .has-feedback .form-control-feedback .form-control
+    .checkbox>label>input:checkbox radio
+    label.checkbox-inline radio-inline
+    .form-control-static
+    disabled .disabled readonly
+    .input-sm .input-lg
+    .form-group-sm .form-group-lg
+    .help-block
+## input group
+    input-group input-group-lg input-group-sm
+    span.input-group-addon
+    span.input-group-btn>button
+
+## label/badge/alert
+    span.label.label-default
+               label-primary
+               label-success
+               label-info
+               label-warning
+               label-danger
+    
+    span.badge
+    
+    .alert.alert-success>strong
+           alert-info
+           alert-warning
+           alert-danger
+    .fade.in
+    a.alert-link
+
+## panel
+    .panel.panel-default>.panel-heading>.panel-title
+           panel-primary>.panel-body
+           panel-success>.panel-footer
+           panel-info   >table.table
+           panel-warning
+           panel-danger
+## collapse/accordion
+    .collapse
+    .collapse.in
+    .collapsing
+    
+    <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo">simple collapsible</button>
+    <div id="demo" class="collapse in">collapse content</div>
+    
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group Item #1</a>
+                </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body"></div>
+            </div>
+        </div>
+    </div>
+
+## list group
+    ul.list-group>.list-group-item>span.badge
+    .list-group>a.list-group-item.active.disabled>h4.list-group-item-heading
+                                                  p.list-group-item-text
+                  list-group-item-success
+                  list-group-item-info
+                  list-group-item-warning
+                  list-group-item-danger
+
+## thumbnail
+    a.thumbnail>img
+    .thumbnail>img+.caption
+## media object
+    .media>a.pull-left>img
+           .media-body>.media-heading
+                       .media
+    ul.media-list>li.media
+
+## pagination
+    ul.pagination pagination-lg pagination-sm
+    li.active.disabled
+    
+    ul.pager
+    li.previous li.next
+
+## progress bar
+    progress>progress-bar[aria-valuenow="0"]
+             progress-bar-success
+             progress-bar-info
+             progress-bar-warning
+             progress-bar-danger
+             progress-bar-striped.active
+
+## embed
+    .embed-responsive.embed-responsive-16by9>iframe.embed-responsive-item
+                     .embed-responsive-4by3
+
+## well
+    .well.well-lg
+         .well-sm
+
+## dropdown
+    dropdown dropup
+    dropdown-toggle
+    ul.dropdown-menu dropdown-menu-right
+    li.active.disabled
+    li.dropdown-header divider
+
+## modal
+    .modal-backdrop.fade.in
+    .modal.fade
+        .modal-dialog.modal-sm.modal-lg
+            .modal-content
+                .modal-header
+                .modal-body
+                .modal-footer
+
+## tooltip
+    [data-toggle="tooltip" data-placement="left" data-original-title="Tooltip on left"]
+    .tooltip.fade.top.left.bottom.right.in>.tooltip-arrow+.tooltip-inner>{Tooltip on left}
+## popover
+    .popover.top>.arrow+.popover-title+.popover-content
+
+## carousel
+    <div id="carousel1" class="carousel slide" data-ride="carousel" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel1" data-slide-to="1"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="http://dummyimage.com/600x400" class="center-block" alt="image">
+                <div class="carousel-caption">
+                    <h3>First slide label</h3>
+                    <p>Nulla vitae elit libero.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://dummyimage.com/600x400" class="center-block" alt="image">
+                <div class="carousel-caption">.carousel-caption</div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#carousel1" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+
+## scrollspy
+    <body data-spy="scroll" data-target=".navbar-example">
+## affix
+    <div data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+</xmp>
+
+<script src="strapdown/strapdown.js"></script>
 </html>

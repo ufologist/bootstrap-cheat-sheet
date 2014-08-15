@@ -1,4 +1,4 @@
-# Bootstrap(v3.2.0) Cheat Sheet(v0.1.0)
+# Bootstrap(v3.2.0) Cheat Sheet(v0.1.0 2014-8-15) by Sun
 Bootstrap的文档非常详尽, 每个组件每个示例都能够方便地在日常开发中快速使用, 真心感谢Bootstrap给我们提供一切, 切实地提高了我们的工作效率.
 
 建议初学者一字不落地将文档看一遍, 上手之后, 其实我们使用频率最高的就是某些组件具体的HTML结构和CSS class, 这些东西如果能够背下来, 必定会让你的开发效率更上一层楼.
@@ -7,9 +7,17 @@ Bootstrap的文档非常详尽, 每个组件每个示例都能够方便地在日
 
 其实我需要的是一份简洁的列表, 告诉我Bootstrap实现了哪些东西, 大概涉及到哪些CSS class, 以方便我快速的应用, 将Bootstrap提供的一切都用起来(榨干框架是我们的宗旨), 不重复造轮子, 体现出框架的价值.
 
-也有小伙伴遇到了同样的问题[Bootstrap Cheat Sheets](http://www.bootstrapcheatsheets.com/about/), 但有些列表不够详尽, 或者版本没有和Bootstrap同步, 反正就是没有找到我想要的东西, 因此我自己做了一份markdown版的, 在Sublime Text中可以非常方便的定位大纲内容, 相当的easy!
+也有小伙伴遇到了同样的问题并打造出了纸质版的[Bootstrap Cheat Sheets](http://www.bootstrapcheatsheets.com/about/), 但有些列表不够详尽, 或者版本没有和Bootstrap同步, 反正就是没有找到我想要的东西, 因此我自己做了一份markdown版的, 在Sublime Text中可以非常方便的定位大纲内容, 相当的easy!
 
 如果你在使用过程中有任何意见建议, 欢迎[fork](https://github.com/ufologist/bootstrap-cheat-sheet)出自己的版本或者提出[issue](https://github.com/ufologist/bootstrap-cheat-sheet/issues/new).
+
+**推荐的使用方法**
+
+将[README.md](https://github.com/ufologist/bootstrap-cheat-sheet/raw/master/README.md)下载到电脑上, 在Sublime Text中打开(Goto Symbol), 效果如下:
+
+![preview](http://ufologist.github.io/bootstrap-cheat-sheet/img/preview.png)
+
+附赠非常实用的[Bootstrap页面模版](http://ufologist.github.io/bootstrap-cheat-sheet/bootstrap-template.html)及[Bootstrap示例集合](http://ufologist.github.io/bootstrap-cheat-sheet/bootstrap-examples.html), 让我们可以更快的找到想要的东西.
 
 
 ## doctype

@@ -280,6 +280,7 @@ Bootstrap的文档非常详尽, 每个组件每个示例都能够方便地在日
     li.dropdown-header divider
 
 ## modal
+    [data-toggle="modal" data-target="#myModal"]
     .modal-backdrop.fade.in
     .modal.fade
         .modal-dialog.modal-sm.modal-lg
@@ -292,6 +293,7 @@ Bootstrap的文档非常详尽, 每个组件每个示例都能够方便地在日
     [data-toggle="tooltip" data-placement="left" data-original-title="Tooltip on left"]
     .tooltip.fade.top.left.bottom.right.in>.tooltip-arrow+.tooltip-inner>{Tooltip on left}
 ## popover
+    [data-toggle="popover" title="popover title" data-content="popover content"]
     .popover.top>.arrow+.popover-title+.popover-content
 
 ## carousel

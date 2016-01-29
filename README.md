@@ -19,7 +19,7 @@ Bootstrap的文档非常详尽, 每个组件每个示例都能够方便地在日
 
 ![preview](http://ufologist.github.io/bootstrap-cheat-sheet/img/preview.png)
 
-附赠非常实用的[Bootstrap页面模版](http://ufologist.github.io/bootstrap-cheat-sheet/bootstrap-template.html), [Bootstrap示例集合](http://ufologist.github.io/bootstrap-cheat-sheet/bootstrap-examples.html), [Bootstrap网页模版](http://ufologist.github.io/bootstrap-cheat-sheet/bootstrap-site-template.html), 让我们可以更快的找到想要的东西.
+附赠非常实用的[Bootstrap页面模版](http://ufologist.github.io/bootstrap-cheat-sheet/bootstrap-template.html), [Bootstrap示例集合](http://ufologist.github.io/bootstrap-cheat-sheet/bootstrap-examples.html), [Bootstrap网页模版](http://ufologist.github.io/bootstrap-cheat-sheet/bootstrap-site-template.html), 让我们可以更快的找到想要的东西. 如果想快速搭一个基于 Bootstrap 的页面, [LayoutIt!](http://www.layoutit.com/build)值得一试.
 
 
 ## doctype
